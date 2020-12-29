@@ -1,0 +1,9 @@
+---
+-name: Installing lamp stack on ubuntu
+ hosts: All
+ become: yes
+ Task:
+   apt:
+   name: apache2
+   update_cache: yes
+   state: present
